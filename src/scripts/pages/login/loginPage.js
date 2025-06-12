@@ -15,20 +15,30 @@ export default class LoginPage {
    */
   async render() {
     return `
-      <section class = "login-container login-page login-content-animate content-hidden" id="login-content">
-        <div class="login-left">
-          <img src="../../../public/images/login-2.png" alt="Logo-login" class="logo"/>
-          <h2>Halo, Selamat Datang !</h2>
-          <p class="account-text">Belum Punya Akun?</p>
-          <button class="btn-create" id="btn-register">Buat Akun</button>
-        </div>
-        <div class="login-right">
-          <h2 class="login-title">Login</h2>
-          <login-form></login-form>
-          <div class="divider">
-            <span>Atau</span>
+      <section class="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-md w-full space-y-8 bg-white p-8 rounded-xl shadow-md">
+          <!-- Left Section -->
+          <div class="bg-[#1146c5] text-white flex-1.2 flex flex-col items-center justify-center rounded-tr-[80px] rounded-br-[80px] p-10">
+            <img src="../../../public/images/login-2.png" alt="Logo-login" class="w-[500px] select-none" />
+            <h2 class="text-3xl font-semibold mb-2">Halo, Selamat Datang!</h2>
+            <p class="text-2xl font-light mb-4">Belum Punya Akun?</p>
+            <button class="w-[201px] h-[56px] mt-5 p-[10px_41px] rounded-[15px] border-2 border-white bg-transparent text-white text-1.5xl cursor-pointer transition-colors duration-200 hover:bg-white hover:text-[#1146c5]" id="btn-register">Buat Akun</button>
           </div>
-          <google-login></google-login>
+
+          <!-- Right Section -->
+          <div class="flex-1 flex flex-col items-center justify-center p-10">
+            <h2 class="text-2.2xl font-semibold mb-6">Login</h2>
+            <login-form></login-form>
+            <div class="relative my-6">
+              <div class="absolute inset-0 flex items-center">
+                <div class="w-full border-t border-gray-300"></div>
+              </div>
+              <div class="relative flex justify-center text-sm">
+                <span class="px-2 bg-white text-gray-500">Atau</span>
+              </div>
+            </div>
+            <google-login></google-login>
+          </div>
         </div>
       </section>
     `;
@@ -39,7 +49,7 @@ export default class LoginPage {
    */
   async afterRender() {
     await handlePageTransition(async () => {
-      // Hapus page‐loading jika ada
+      // Hapus page loading jika ada
       const loadingEl = document.querySelector(".page-loading");
       if (loadingEl) loadingEl.remove();
 
@@ -60,6 +70,7 @@ export default class LoginPage {
         });
       }
 
+      // Animasi saat klik Register
       this.querySelector('#register-link').addEventListener('click', () => {
         const blueBg = document.createElement('div');
         blueBg.className = 'blue-bg-animate';
@@ -141,7 +152,7 @@ export default class LoginPage {
             ).disabled = false;
           },
           showSuccess: () => {
-            statusContainer.innerHTML = `
+            statusContainer.innerHTML = ` 
                         <div class="bg-green-50 border-l-4 border-green-500 p-4 mb-4">
                           <div class="flex items-center">
                             <div class="flex-shrink-0">
@@ -194,7 +205,7 @@ export default class LoginPage {
 
           // Validasi sederhana
           if (!email || !password) {
-            statusContainer.innerHTML = `
+            statusContainer.innerHTML = ` 
                         <div class="bg-red-50 border-l-4 border-red-500 p-4 mb-4">
                           <div class="flex">
                             <div class="ml-3">
