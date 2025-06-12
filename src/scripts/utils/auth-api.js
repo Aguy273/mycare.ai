@@ -106,7 +106,11 @@ const AuthApi = {
         // Simpan URL saat ini sebagai redirect_uri setelah login
         const currentUrl = window.location.href.split("#")[0];
         localStorage.setItem("login_redirect", currentUrl);
-        window.location.href = `https://mycare-ai.netlify.app/?token=${token}/auth/google?redirect_uri=${encodeURIComponent(currentUrl)}`;
+
+        // Tambahkan parameter untuk menangani error
+        window.location.href = `${CONFIG.API_BASE_URL}${
+            CONFIG.AUTH_API.GOOGLE_AUTH_URL
+        }?redirect_uri=${encodeURIComponent(currentUrl)}`;
     },
 
     // Tambahkan metode untuk menangani callback Google
@@ -128,8 +132,6 @@ const AuthApi = {
         const userData = urlParams.get("user");
 
         if (token) {
-            localStorage.setItem("token", token);
-            localStorage.setItem("user", JSON.stringify(user));
             try {
                 const user = userData
                     ? JSON.parse(decodeURIComponent(userData))

@@ -1,18 +1,18 @@
 import LoginPresenter from "../presenter/login-presenter.js";
 import {
-  createPageLoadingTemplate,
-  handlePageTransition,
+    createPageLoadingTemplate,
+    handlePageTransition,
 } from "../../utils/index.js";
 import AuthAPI from "../../utils/auth-api.js";
 import { setAuth } from "../../utils/auth-utils.js";
 
 export default class LoginPage {
-  /**
-   * Mengembalikan HTML untuk halaman login (form & status).
-   * @returns {string}
-   */
-  async render() {
-    return `
+    /**
+     * Mengembalikan HTML untuk halaman login (form & status).
+     * @returns {string}
+     */
+    async render() {
+        return `
       <section class="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
         <div class="max-w-md w-full space-y-8 bg-white p-8 rounded-xl shadow-md">
           <div class="text-center">
@@ -105,47 +105,47 @@ export default class LoginPage {
         </div>
       </section>
     `;
-  }
+    }
 
-  /**
-   * Setelah render, kita pasang event listener untuk form submit, register link, dan Google button.
-   */
-  async afterRender() {
-    await handlePageTransition(async () => {
-      // Hapus page‐loading jika ada
-      const loadingEl = document.querySelector(".page-loading");
-      if (loadingEl) loadingEl.remove();
+    /**
+     * Setelah render, kita pasang event listener untuk form submit, register link, dan Google button.
+     */
+    async afterRender() {
+        await handlePageTransition(async () => {
+            // Hapus page‐loading jika ada
+            const loadingEl = document.querySelector(".page-loading");
+            if (loadingEl) loadingEl.remove();
 
-      const loginForm = document.querySelector("#login-form");
-      const statusContainer = document.querySelector("#status-container");
-      const registerLink = document.querySelector("#register-link");
-      const googleButton = document.querySelector("#btn-google");
+            const loginForm = document.querySelector("#login-form");
+            const statusContainer = document.querySelector("#status-container");
+            const registerLink = document.querySelector("#register-link");
+            const googleButton = document.querySelector("#btn-google");
 
-      // Jika klik "Register" → tampilkan page loading dan ganti rute
-      if (registerLink) {
-        registerLink.addEventListener("click", async (e) => {
-          e.preventDefault();
-          document.body.insertAdjacentHTML(
-            "beforeend",
-            createPageLoadingTemplate()
-          );
-          window.location.hash = "#/register";
-        });
-      }
+            // Jika klik "Register" → tampilkan page loading dan ganti rute
+            if (registerLink) {
+                registerLink.addEventListener("click", async (e) => {
+                    e.preventDefault();
+                    document.body.insertAdjacentHTML(
+                        "beforeend",
+                        createPageLoadingTemplate()
+                    );
+                    window.location.hash = "#/register";
+                });
+            }
 
-      // Jika klik tombol Google → langsung redirect ke endpoint Google
-      if (googleButton) {
-        googleButton.addEventListener("click", (e) => {
-          e.preventDefault();
-          AuthAPI.loginWithGoogle();
-        });
-      }
+            // Jika klik tombol Google → langsung redirect ke endpoint Google
+            if (googleButton) {
+                googleButton.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    AuthAPI.loginWithGoogle();
+                });
+            }
 
-      // Inisialisasi presenter
-      const presenter = new LoginPresenter({
-        view: {
-          showLoading: () => {
-            statusContainer.innerHTML = `
+            // Inisialisasi presenter
+            const presenter = new LoginPresenter({
+                view: {
+                    showLoading: () => {
+                        statusContainer.innerHTML = `
                         <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-4">
                           <div class="flex items-center">
                             <div class="flex-shrink-0">
@@ -159,12 +159,12 @@ export default class LoginPage {
                             </div>
                           </div>
                         </div>`;
-            loginForm.querySelector(
-              'button[type="submit"]'
-            ).disabled = true;
-          },
-          showError: (message) => {
-            statusContainer.innerHTML = `<div class="bg-red-50 border-l-4 border-red-500 p-4 mb-4">
+                        loginForm.querySelector(
+                            'button[type="submit"]'
+                        ).disabled = true;
+                    },
+                    showError: (message) => {
+                        statusContainer.innerHTML = `<div class="bg-red-50 border-l-4 border-red-500 p-4 mb-4">
                           <div class="flex items-center">
                             <div class="flex-shrink-0">
                               <svg class="h-5 w-5 text-red-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
@@ -176,12 +176,12 @@ export default class LoginPage {
                             </div>
                           </div>
                         </div>`;
-            loginForm.querySelector(
-              'button[type="submit"]'
-            ).disabled = false;
-          },
-          showSuccess: () => {
-            statusContainer.innerHTML = `
+                        loginForm.querySelector(
+                            'button[type="submit"]'
+                        ).disabled = false;
+                    },
+                    showSuccess: () => {
+                        statusContainer.innerHTML = `
                         <div class="bg-green-50 border-l-4 border-green-500 p-4 mb-4">
                           <div class="flex items-center">
                             <div class="flex-shrink-0">
@@ -195,46 +195,46 @@ export default class LoginPage {
                           </div>
                         </div>
                         `;
-            loginForm.reset();
-            loginForm.querySelector(
-              'button[type="submit"]'
-            ).disabled = true;
+                        loginForm.reset();
+                        loginForm.querySelector(
+                            'button[type="submit"]'
+                        ).disabled = true;
 
-            // Beri tahu aplikasi bahwa status auth berubah
-            document.dispatchEvent(new Event("authChanged"));
+                        // Beri tahu aplikasi bahwa status auth berubah
+                        document.dispatchEvent(new Event("authChanged"));
 
-            // Tampilkan page loading sebelum pindah ke home
-            document.body.insertAdjacentHTML(
-              "beforeend",
-              createPageLoadingTemplate()
-            );
-            setTimeout(() => {
-              window.history.replaceState(
-                {},
-                "",
-                window.location.pathname
-              );
-              window.location.hash = "#/"; // Arahkan ke halaman utama
-            }, 1000);
-          },
-        },
-        authAPI: AuthAPI,
-        authUtils: { setAuth },
-      });
+                        // Tampilkan page loading sebelum pindah ke home
+                        document.body.insertAdjacentHTML(
+                            "beforeend",
+                            createPageLoadingTemplate()
+                        );
+                        setTimeout(() => {
+                            window.history.replaceState(
+                                {},
+                                "",
+                                window.location.pathname
+                            );
+                            window.location.hash = "#/"; // Arahkan ke halaman utama
+                        }, 1000);
+                    },
+                },
+                authAPI: AuthAPI,
+                authUtils: { setAuth },
+            });
 
-      // Pasang event listener form submit
-      if (loginForm) {
-        loginForm.addEventListener("submit", (event) => {
-          event.preventDefault();
+            // Pasang event listener form submit
+            if (loginForm) {
+                loginForm.addEventListener("submit", (event) => {
+                    event.preventDefault();
 
-          const email = document.querySelector("#email").value.trim();
-          const password = document
-            .querySelector("#password")
-            .value.trim();
+                    const email = document.querySelector("#email").value.trim();
+                    const password = document
+                        .querySelector("#password")
+                        .value.trim();
 
-          // Validasi sederhana
-          if (!email || !password) {
-            statusContainer.innerHTML = `
+                    // Validasi sederhana
+                    if (!email || !password) {
+                        statusContainer.innerHTML = `
                         <div class="bg-red-50 border-l-4 border-red-500 p-4 mb-4">
                           <div class="flex">
                             <div class="ml-3">
@@ -242,23 +242,13 @@ export default class LoginPage {
                             </div>
                           </div>
                         </div>`;
-            return;
-          }
+                        return;
+                    }
 
-          const formData = { email, password };
-          presenter.login(formData);
+                    const formData = { email, password };
+                    presenter.login(formData);
+                });
+            }
         });
-      }
-    });
-    async login(formData) {
-      const { error, data, message } = await AuthAPI.login(formData);
-      if (error) {
-        throw new Error(message || "Login gagal. Silakan coba lagi.");
-      }
-      if (data && data.token) {
-        setAuth({ token: data.token, user: data.user });
-        window.location.reload();
-      }
     }
-  }
 }
