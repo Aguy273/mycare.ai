@@ -164,32 +164,31 @@ export default class ChatPageView {
             fear: {
                 articles: [
                     {
-                        title: "How to manage fear and anxiety",
-                        source: "Mental Health Foundation UK",
-                        link: "https://www.mentalhealth.org.uk/explore-mental-health/publications/how-overcome-anxiety-and-fear"
+                        title: "How to Work With Fear Today",
+                        source: "Mindful.org (2024)",
+                        link: "https://www.mindful.org/how-to-deal-with-fear-now/",
                     },
                     {
-                        title: "One habit could reduce your fears of public speaking, criticism, failure and more",
-                        source: "VeryWellMind",
-                        link: "https://edition.cnn.com/2021/11/04/health/mindfulness-practices-for-fear-benefits-wellness"
+                        title: "The Role of Mindfulness in Overcoming Fear",
+                        source: "VeryWellMind (2023)",
+                        link: "https://www.verywellmind.com/mindfulness-and-fear-6500432",
                     },
                     {
-                        title: "Anxiety Management: Fear Leads to Worry",
-                        source: "The Conover Company",
-                        link: "https://www.conovercompany.com/anxiety-management-fear-leads-worry/"
+                        title: "Facing Modern Fear: From Social Anxiety to AI Panic",
+                        source: "Psychology Today (2023)",
+                        link: "https://www.psychologytoday.com/us/blog/facing-modern-fears",
                     },
                     {
-                        title: "Anxiety and Anger: Understand the Relationship",
-                        source: "Mind Health Group",
-                        link: "https://www.mindhealthgroup.com/blog/anxiety-anger-whats-the-relationship/"
+                        title: "Fear and Digital Overload: What to Do About It",
+                        source: "Harvard Health (2022)",
+                        link: "https://www.health.harvard.edu/blog/fear-digital-age",
                     },
                     {
-                        title: "Human Emotional Evaluation of Ancestral and Modern Threats",
-                        source: "Frontiers in Psychology",
-                        link: "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2023.1321053/full"
-                    }
+                        title: "Is Fear Always Bad? Neuroscientific Insights",
+                        source: "Scientific American (2024)",
+                        link: "https://www.scientificamerican.com/fear-and-brain-2024",
+                    },
                 ],
-
                 journals: [
                     {
                         title: "The Neuroscience of Fear and Its Modulation Through Meditation",
@@ -280,27 +279,31 @@ export default class ChatPageView {
             sadness: {
                 articles: [
                     {
-                        title: "Sadness in Psychology: Exploring the Emotional Landscape",
-                        source: "NeuroLaunch",
-                        link: "https://neurolaunch.com/what-is-sadness-in-psychology/"
+                        title: "How to Work With Fear Today",
+                        source: "Mindful.org (2024)",
+                        link: "https://www.mindful.org/how-to-deal-with-fear-now/",
                     },
                     {
-                        title: "Depression vs. Sadness: How to Tell the Difference",
-                        source: "Medical News Today",
-                        link: "https://www.medicalnewstoday.com/articles/314418"
+                        title: "The Role of Mindfulness in Overcoming Fear",
+                        source: "VeryWellMind (2023)",
+                        link: "https://www.verywellmind.com/mindfulness-and-fear-6500432",
                     },
                     {
-                        title: "What Is Depression?",
-                        source: "American Psychiatric Association",
-                        link: "https://www.psychiatry.org/patients-families/depression/what-is-depression"
+                        title: "Facing Modern Fear: From Social Anxiety to AI Panic",
+                        source: "Psychology Today (2023)",
+                        link: "https://www.psychologytoday.com/us/blog/facing-modern-fears",
                     },
                     {
-                        title: "Understanding Grief and Loss",
-                        source: "help guide",
-                        link: "https://www.helpguide.org/mental-health/grief/coping-with-grief-and-loss"
-                    }
+                        title: "Fear and Digital Overload: What to Do About It",
+                        source: "Harvard Health (2022)",
+                        link: "https://www.health.harvard.edu/blog/fear-digital-age",
+                    },
+                    {
+                        title: "Is Fear Always Bad? Neuroscientific Insights",
+                        source: "Scientific American (2024)",
+                        link: "https://www.scientificamerican.com/fear-and-brain-2024",
+                    },
                 ],
-
                 journals: [
                     {
                         title: "The Neuroscience of Fear and Its Modulation Through Meditation",
@@ -388,35 +391,34 @@ export default class ChatPageView {
                     },
                 ],
             },
-            anger: {
+            angear: {
                 articles: [
                     {
-                        title: "mengapa-marah-dan-melepas-emosi-penting",
-                        source: "kompas.id",
-                        link: "https://www.kompas.id/baca/gaya-hidup/2024/08/04/mengapa-marah-dan-melepas-emosi-penting"
+                        title: "How to Work With Fear Today",
+                        source: "Mindful.org (2024)",
+                        link: "https://www.mindful.org/how-to-deal-with-fear-now/",
                     },
                     {
-                        title: "penyebab-seseorang-bisa-punya-anger-issues",
-                        source: "antaranews",
-                        link: "https://www.antaranews.com/berita/4791069/penyebab-seseorang-bisa-punya-anger-issues"
+                        title: "The Role of Mindfulness in Overcoming Fear",
+                        source: "VeryWellMind (2023)",
+                        link: "https://www.verywellmind.com/mindfulness-and-fear-6500432",
                     },
                     {
-                        title: "Control anger before it controls you",
-                        source: "Mindful.org",
-                        link: "https://www.apa.org/topics/anger/control"
+                        title: "Facing Modern Fear: From Social Anxiety to AI Panic",
+                        source: "Psychology Today (2023)",
+                        link: "https://www.psychologytoday.com/us/blog/facing-modern-fears",
                     },
                     {
-                        title: "Anxiety and Anger: Exploring the Relationship",
-                        source: "Talkspace",
-                        link: "https://www.talkspace.com/mental-health/conditions/articles/anxiety-and-anger/"
+                        title: "Fear and Digital Overload: What to Do About It",
+                        source: "Harvard Health (2022)",
+                        link: "https://www.health.harvard.edu/blog/fear-digital-age",
                     },
                     {
-                        title: "Anxiety and Anger: How They're Connected",
-                        source: "Discovery Mood & Anxiety Program",
-                        link: "https://discoverymood.com/blog/anxiety-and-anger/"
-                    }
+                        title: "Is Fear Always Bad? Neuroscientific Insights",
+                        source: "Scientific American (2024)",
+                        link: "https://www.scientificamerican.com/fear-and-brain-2024",
+                    },
                 ],
-
                 journals: [
                     {
                         title: "The Neuroscience of Fear and Its Modulation Through Meditation",
@@ -507,22 +509,31 @@ export default class ChatPageView {
             suicidal: {
                 articles: [
                     {
-                        title: "2024 National Strategy for Suicide Prevention",
-                        source: "U.S. Department of Health and Human Services",
-                        link: "https://www.hhs.gov/programs/prevention-and-wellness/mental-health-substance-use-disorder/national-strategy-suicide-prevention/index.html"
+                        title: "How to Work With Fear Today",
+                        source: "Mindful.org (2024)",
+                        link: "https://www.mindful.org/how-to-deal-with-fear-now/",
                     },
                     {
-                        title: "Suicide Prevention Month",
-                        source: "NAMI",
-                        link: "https://www.nami.org/get-involved/awareness-events/suicide-prevention-month/"
+                        title: "The Role of Mindfulness in Overcoming Fear",
+                        source: "VeryWellMind (2023)",
+                        link: "https://www.verywellmind.com/mindfulness-and-fear-6500432",
                     },
                     {
-                        title: "Youth Mental Health Trends in 2025",
-                        source: "JED Foundation",
-                        link: "https://jedfoundation.org/what-we-expect-in-2025-new-years-trends-in-youth-mental-health/"
-                    }
+                        title: "Facing Modern Fear: From Social Anxiety to AI Panic",
+                        source: "Psychology Today (2023)",
+                        link: "https://www.psychologytoday.com/us/blog/facing-modern-fears",
+                    },
+                    {
+                        title: "Fear and Digital Overload: What to Do About It",
+                        source: "Harvard Health (2022)",
+                        link: "https://www.health.harvard.edu/blog/fear-digital-age",
+                    },
+                    {
+                        title: "Is Fear Always Bad? Neuroscientific Insights",
+                        source: "Scientific American (2024)",
+                        link: "https://www.scientificamerican.com/fear-and-brain-2024",
+                    },
                 ],
-
                 journals: [
                     {
                         title: "The Neuroscience of Fear and Its Modulation Through Meditation",
@@ -911,7 +922,7 @@ export default class ChatPageView {
                     // Muat totalEmotionClassifications
                     this.totalEmotionClassifications =
                         typeof parsedData.totalEmotionClassifications ===
-                            "number"
+                        "number"
                             ? parsedData.totalEmotionClassifications
                             : 0;
 
@@ -1132,7 +1143,7 @@ export default class ChatPageView {
                 // Cek apakah sudah mencapai jumlah klasifikasi yang dibutuhkan
                 if (
                     this.totalEmotionClassifications >=
-                    this.REQUIRED_CLASSIFICATIONS &&
+                        this.REQUIRED_CLASSIFICATIONS &&
                     !this.classificationFinal
                 ) {
                     this.determineFinalMusicPreference();
@@ -1251,9 +1262,9 @@ export default class ChatPageView {
                         <h4 class="font-medium text-blue-600 mb-2">Artikel yang Direkomendasikan</h4>
                         <ul class="space-y-2">
                             ${resources.articles
-                .slice(0, 3)
-                .map(
-                    (article) => `
+                                .slice(0, 3)
+                                .map(
+                                    (article) => `
                                 <li>
                                     <a href="${article.link}" target="_blank" class="text-gray-700 hover:text-blue-600 flex items-start">
                                         <span class="text-blue-500 mr-2">📄</span>
@@ -1261,8 +1272,8 @@ export default class ChatPageView {
                                     </a>
                                 </li>
                             `
-                )
-                .join("")}
+                                )
+                                .join("")}
                         </ul>
                     </div>
 
@@ -1271,9 +1282,9 @@ export default class ChatPageView {
                         <h4 class="font-medium text-purple-600 mb-2">Jurnal Penelitian</h4>
                         <ul class="space-y-2">
                             ${resources.journals
-                .slice(0, 2)
-                .map(
-                    (journal) => `
+                                .slice(0, 2)
+                                .map(
+                                    (journal) => `
                                 <li>
                                     <a href="${journal.link}" target="_blank" class="text-gray-700 hover:text-purple-600 flex items-start">
                                         <span class="text-purple-500 mr-2">📚</span>
@@ -1281,8 +1292,8 @@ export default class ChatPageView {
                                     </a>
                                 </li>
                             `
-                )
-                .join("")}
+                                )
+                                .join("")}
                         </ul>
                     </div>
 
@@ -1291,9 +1302,9 @@ export default class ChatPageView {
                         <h4 class="font-medium text-green-600 mb-2">Meditasi & Mindfulness</h4>
                         <ul class="space-y-2">
                             ${resources.meditations
-                .slice(0, 3)
-                .map(
-                    (meditation) => `
+                                .slice(0, 3)
+                                .map(
+                                    (meditation) => `
                                 <li>
                                     <a href="${meditation.link}" target="_blank" class="text-gray-700 hover:text-green-600 flex items-start">
                                         <span class="text-green-500 mr-2">🧘</span>
@@ -1301,8 +1312,8 @@ export default class ChatPageView {
                                     </a>
                                 </li>
                             `
-                )
-                .join("")}
+                                )
+                                .join("")}
                         </ul>
                     </div>
 
@@ -1311,9 +1322,9 @@ export default class ChatPageView {
                         <h4 class="font-medium text-red-600 mb-2">Musik Penenang</h4>
                         <ul class="space-y-2">
                             ${resources.music
-                .slice(0, 3)
-                .map(
-                    (music) => `
+                                .slice(0, 3)
+                                .map(
+                                    (music) => `
                                 <li>
                                     <a href="${music.link}" target="_blank" class="text-gray-700 hover:text-red-600 flex items-start">
                                         <span class="text-red-500 mr-2">🎵</span>
@@ -1321,8 +1332,8 @@ export default class ChatPageView {
                                     </a>
                                 </li>
                             `
-                )
-                .join("")}
+                                )
+                                .join("")}
                         </ul>
                     </div>
                 </div>

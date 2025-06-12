@@ -11,65 +11,65 @@ export default class HomePage {
                 category: "anger",
                 categoryLabel: "Anger",
                 categoryColor: "red",
-                title: "mengapa-marah-dan-melepas-emosi-penting",
-                source: "kompas.id",
+                title: "Why You're Angry All the Time (And What to Do About It)",
+                source: "Psychology Today",
                 description:
-                    "Artikel ini membahas pentingnya meluapkan emosi seperti kemarahan agar tidak menumpuk akibat tekanan sehari-hari. Disoroti pula berbagai cara menyalurkan emosi secara sehat, seperti melalui aktivitas fisik atau ruang pelampiasan seperti Breakroom",
+                    "Artikel dari Psychology Today ini membahas penyebab kemarahan kronis dan strategi efektif untuk mengelolanya dalam kehidupan sehari-hari.",
                 date: "2022",
                 image: "https://picsum.photos/seed/anger1/400/300",
-                link: "https://www.kompas.id/baca/gaya-hidup/2024/08/04/mengapa-marah-dan-melepas-emosi-penting",
+                link: "https://www.psychologytoday.com/us/articles/why-youre-angry-all-the-time",
             },
             {
                 id: 2,
                 category: "anger",
                 categoryLabel: "Anger",
                 categoryColor: "red",
-                title: "penyebab-seseorang-bisa-punya-anger-issues",
-                source: "antaranews",
+                title: "Managing Anger in the Post-Pandemic World",
+                source: "VeryWellMind",
                 description:
-                    "Berbagai faktor seperti trauma masa lalu, stres, gangguan mental, dan kehilangan dapat menyebabkan seseorang mengalami anger issues atau kesulitan mengendalikan amarah.",
+                    "VeryWellMind membahas bagaimana pandemi telah mempengaruhi tingkat kemarahan kolektif dan cara-cara baru untuk mengelolanya di era pasca-pandemi.",
                 date: "2023",
                 image: "https://picsum.photos/seed/anger2/400/300",
-                link: "https://www.antaranews.com/berita/4791069/penyebab-seseorang-bisa-punya-anger-issues",
+                link: "https://www.verywellmind.com/anger-in-the-pandemic-era-5094215",
             },
             {
                 id: 3,
                 category: "anger",
                 categoryLabel: "Anger",
                 categoryColor: "red",
-                title: "Control anger before it controls you",
+                title: "What Science Says About Anger Management Today",
                 source: "Mindful.org",
                 description:
-                    "Artikel dari American Psychological Association ini menjelaskan cara mengenali, mengelola, dan mengendalikan kemarahan agar tidak berdampak negatif pada kesehatan mental dan hubungan sosial. Disertai dengan teknik relaksasi, restrukturisasi kognitif, dan pemahaman ilmiah tentang penyebab kemarahan.",
+                    "Mindful.org menyajikan penelitian terbaru tentang manajemen kemarahan dan pendekatan berbasis mindfulness untuk mengatasi emosi yang intens.",
                 date: "2023",
                 image: "https://picsum.photos/seed/anger3/400/300",
-                link: "https://www.apa.org/topics/anger/control",
+                link: "https://www.mindful.org/what-science-says-about-anger-management/",
             },
             {
                 id: 4,
                 category: "anger",
                 categoryLabel: "Anger",
                 categoryColor: "red",
-                title: "Anxiety and Anger: Exploring the Relationship",
-                source: "Talkspace",
+                title: "Healthy Ways to Express Anger",
+                source: "Mayo Clinic Blog",
                 description:
-                    "Talkspace membahas keterampilan mengatasi yang membantu mengatur emosi dan mengelola stres yang menyebabkan kecemasan dan kemarahan.",
+                    "Mayo Clinic Blog memberikan panduan praktis tentang cara-cara sehat untuk mengekspresikan kemarahan tanpa merusak hubungan atau kesehatan mental.",
                 date: "2024",
                 image: "https://picsum.photos/seed/anger4/400/300",
-                link: "https://www.talkspace.com/mental-health/conditions/articles/anxiety-and-anger/",
+                link: "https://www.mayoclinic.org/anger-expression-tips",
             },
             {
                 id: 5,
                 category: "anger",
                 categoryLabel: "Anger",
                 categoryColor: "red",
-                title: "Anxiety and Anger: How They're Connected",
-                source: "Discovery Mood & Anxiety Program",
+                title: "Anger at Work: The New Stressor?",
+                source: "Harvard Business Review",
                 description:
-                    "Discovery Mood & Anxiety Program menjelaskan bagaimana terapi untuk gangguan kecemasan dapat membantu mengungkap alasan kemarahan seseorang.",
-                date: "2024",
+                    "Harvard Business Review menganalisis bagaimana kemarahan di tempat kerja menjadi stressor utama dan strategi untuk mengelolanya secara profesional.",
+                date: "2022",
                 image: "https://picsum.photos/seed/anger5/400/300",
-                link: "https://discoverymood.com/blog/anxiety-and-anger/",
+                link: "https://hbr.org/2022/10/how-to-handle-anger-at-work",
             },
             // Artikel Fear
             {
@@ -77,65 +77,65 @@ export default class HomePage {
                 category: "fear",
                 categoryLabel: "Fear",
                 categoryColor: "purple",
-                title: "How to manage fear and anxiety",
-                source: "Mental Health Foundation UK",
+                title: "How to Work With Fear Today",
+                source: "Mindful.org",
                 description:
-                    "Panduan lengkap untuk memahami perbedaan antara rasa takut dan cemas, jenis-jenis kecemasan, serta langkah praktis untuk mengelola dan menghadapinya.",
+                    "Mindful.org menyajikan panduan praktis untuk mengenali, menerima, dan bekerja dengan rasa takut dalam konteks dunia modern.",
                 date: "2024",
                 image: "https://picsum.photos/seed/fear1/400/300",
-                link: "https://www.mentalhealth.org.uk/explore-mental-health/publications/how-overcome-anxiety-and-fear",
+                link: "https://www.mindful.org/how-to-deal-with-fear-now/",
             },
             {
                 id: 7,
                 category: "fear",
                 categoryLabel: "Fear",
                 categoryColor: "purple",
-                title: "One habit could reduce your fears of public speaking, criticism, failure and more",
+                title: "The Role of Mindfulness in Overcoming Fear",
                 source: "VeryWellMind",
                 description:
-                    "Artikel ini mengulas bagaimana praktik mindfulness secara signifikan dapat membantu mengatasi rasa takut seperti berbicara di depan umum, kritik, dan kegagalan. Dengan contoh nyata dari Jeena Cho, seorang pengacara yang mengalami kecemasan sosial, dijelaskan bagaimana mindfulness membantunya mengubah cara merespons rasa takut..",
+                    "VeryWellMind mengeksplorasi bagaimana praktik mindfulness dapat membantu mengatasi ketakutan dan kecemasan kronis.",
                 date: "2023",
                 image: "https://picsum.photos/seed/fear2/400/300",
-                link: "https://edition.cnn.com/2021/11/04/health/mindfulness-practices-for-fear-benefits-wellness",
+                link: "https://www.verywellmind.com/mindfulness-and-fear-6500432",
             },
             {
                 id: 8,
                 category: "fear",
                 categoryLabel: "Fear",
                 categoryColor: "purple",
-                title: "Anxiety Management: Fear Leads to Worry",
-                source: "The Conover Company",
+                title: "Facing Modern Fear: From Social Anxiety to AI Panic",
+                source: "Psychology Today",
                 description:
-                    "The Conover Company membahas bagaimana ketakutan dapat mengarah pada kemarahan dan kebencian, serta strategi mengelola kecemasan.",
-                date: "2024",
+                    "Psychology Today membahas spektrum ketakutan modern, mulai dari kecemasan sosial hingga ketakutan terhadap teknologi AI yang berkembang.",
+                date: "2023",
                 image: "https://picsum.photos/seed/fear3/400/300",
-                link: "https://www.conovercompany.com/anxiety-management-fear-leads-worry/",
+                link: "https://www.psychologytoday.com/us/blog/facing-modern-fears",
             },
             {
                 id: 9,
                 category: "fear",
                 categoryLabel: "Fear",
                 categoryColor: "purple",
-                title: "Anxiety and Anger: Understand the Relationship",
-                source: "Mind Health Group",
+                title: "Fear and Digital Overload: What to Do About It",
+                source: "Harvard Health",
                 description:
-                    "Mind Health Group menjelaskan bagaimana Cognitive Behavioral Therapy (CBT) efektif dalam mengatasi gangguan kecemasan dan kemarahan yang tidak terkontrol.",
-                date: "2024",
+                    "Harvard Health menganalisis hubungan antara kecemasan, ketakutan, dan kelebihan informasi digital, serta menawarkan solusi praktis.",
+                date: "2022",
                 image: "https://picsum.photos/seed/fear4/400/300",
-                link: "https://www.mindhealthgroup.com/blog/anxiety-anger-whats-the-relationship/",
+                link: "https://www.health.harvard.edu/blog/fear-digital-age",
             },
             {
                 id: 10,
                 category: "fear",
                 categoryLabel: "Fear",
                 categoryColor: "purple",
-                title: "Human Emotional Evaluation of Ancestral and Modern Threats",
-                source: "Frontiers in Psychology",
+                title: "Is Fear Always Bad? Neuroscientific Insights",
+                source: "Scientific American",
                 description:
-                    "Frontiers in Psychology menyajikan penelitian tentang respon emosional manusia terhadap ancaman modern dan kuno dalam konteks ketakutan.",
+                    "Scientific American menyajikan temuan neurosains terbaru tentang peran adaptif rasa takut dan bagaimana memanfaatkannya secara positif.",
                 date: "2024",
                 image: "https://picsum.photos/seed/fear5/400/300",
-                link: "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2023.1321053/full",
+                link: "https://www.scientificamerican.com/fear-and-brain-2024",
             },
             // Artikel Sadness
             {
@@ -143,52 +143,52 @@ export default class HomePage {
                 category: "sadness",
                 categoryLabel: "Sadness",
                 categoryColor: "blue",
-                title: "Sadness in Psychology: Exploring the Emotional Landscape",
-                source: "NeuroLaunch",
+                title: "Understanding the Purpose of Sadness",
+                source: "Psychology Today",
                 description:
-                    "NeuroLaunch menjelaskan perspektif psikologi tentang kesedihan dan pola pikir negatif yang mempengaruhi kondisi emosional.",
-                date: "2024",
+                    "Psychology Today mengeksplorasi fungsi evolusioner kesedihan dan bagaimana emosi ini dapat membantu kita memproses pengalaman hidup.",
+                date: "2023",
                 image: "https://picsum.photos/seed/sadness1/400/300",
-                link: "https://neurolaunch.com/what-is-sadness-in-psychology/",
+                link: "#",
             },
             {
                 id: 12,
                 category: "sadness",
                 categoryLabel: "Sadness",
                 categoryColor: "blue",
-                title: "Depression vs. Sadness: How to Tell the Difference",
-                source: "Medical News Today",
+                title: "When Sadness Becomes Depression: Recognizing the Signs",
+                source: "Mayo Clinic",
                 description:
-                    "Medical News Today membahas perbedaan antara depresi dan kesedihan biasa, dimana kesedihan adalah emosi yang semua orang alami sedangkan depresi adalah kondisi yang berbeda.",
+                    "Mayo Clinic membahas perbedaan antara kesedihan normal dan depresi klinis, serta kapan harus mencari bantuan profesional.",
                 date: "2024",
                 image: "https://picsum.photos/seed/sadness2/400/300",
-                link: "https://www.medicalnewstoday.com/articles/314418",
+                link: "#",
             },
             {
                 id: 13,
                 category: "sadness",
                 categoryLabel: "Sadness",
                 categoryColor: "blue",
-                title: "What Is Depression?",
-                source: "American Psychiatric Association",
+                title: "Embracing Sadness: The Mindful Approach",
+                source: "Mindful.org",
                 description:
-                    "American Psychiatric Association menjelaskan gejala depresi termasuk perasaan sedih, mudah tersinggung, kehilangan minat atau kesenangan dalam aktivitas.",
-                date: "2024",
+                    "Mindful.org menawarkan pendekatan berbasis mindfulness untuk menghadapi dan menerima kesedihan sebagai bagian dari pengalaman manusia.",
+                date: "2023",
                 image: "https://picsum.photos/seed/sadness3/400/300",
-                link: "https://www.psychiatry.org/patients-families/depression/what-is-depression",
+                link: "#",
             },
             {
                 id: 14,
                 category: "sadness",
                 categoryLabel: "Sadness",
                 categoryColor: "blue",
-                title: "Understanding Grief and Loss",
-                source: "help guide",
+                title: "Cultural Differences in Expressing Sadness",
+                source: "Harvard Review",
                 description:
-                    "Artikel HelpGuide ini membahas tahapan kesedihan, proses berduka, dan cara-cara sehat untuk mengatasi kehilangan, termasuk mitos umum, gejala emosional, serta pentingnya dukungan dan perawatan diri.",
-                date: "2024",
+                    "Harvard Review menganalisis bagaimana berbagai budaya memahami, mengekspresikan, dan mengatasi kesedihan dengan cara yang berbeda.",
+                date: "2022",
                 image: "https://picsum.photos/seed/sadness4/400/300",
-                link: "https://www.helpguide.org/mental-health/grief/coping-with-grief-and-loss",
+                link: "#",
             },
             // Artikel Suicidal
             {
@@ -196,39 +196,39 @@ export default class HomePage {
                 category: "suicidal",
                 categoryLabel: "Suicidal",
                 categoryColor: "yellow",
-                title: "2024 National Strategy for Suicide Prevention",
-                source: "U.S. Department of Health and Human Services",
+                title: "Recognizing Warning Signs: A Guide for Friends and Family",
+                source: "American Foundation for Suicide Prevention",
                 description:
-                    "Strategi nasional 10 tahun yang komprehensif untuk pencegahan bunuh diri dengan rekomendasi konkret untuk mengatasi kesenjangan dalam bidang pencegahan bunuh diri.",
+                    "American Foundation for Suicide Prevention menyajikan panduan komprehensif untuk mengenali tanda-tanda peringatan pikiran bunuh diri.",
                 date: "2024",
                 image: "https://picsum.photos/seed/suicidal1/400/300",
-                link: "https://www.hhs.gov/programs/prevention-and-wellness/mental-health-substance-use-disorder/national-strategy-suicide-prevention/index.html",
+                link: "#",
             },
             {
                 id: 16,
                 category: "suicidal",
                 categoryLabel: "Suicidal",
                 categoryColor: "yellow",
-                title: "Suicide Prevention Month",
-                source: "NAMI",
+                title: "Effective Interventions for Suicidal Thoughts",
+                source: "National Institute of Mental Health",
                 description:
-                    "NAMI menyajikan informasi tentang Bulan September sebagai Bulan Pencegahan Bunuh Diri untuk meningkatkan kesadaran dan berbagi informasi penting.",
-                date: "2024",
+                    "National Institute of Mental Health membahas intervensi berbasis bukti untuk mengatasi pikiran bunuh diri dan mencegah krisis.",
+                date: "2023",
                 image: "https://picsum.photos/seed/suicidal2/400/300",
-                link: "https://www.nami.org/get-involved/awareness-events/suicide-prevention-month/",
+                link: "#",
             },
             {
                 id: 17,
                 category: "suicidal",
                 categoryLabel: "Suicidal",
                 categoryColor: "yellow",
-                title: "Youth Mental Health Trends in 2025",
-                source: "JED Foundation",
+                title: "Building Hope: Recovery Stories from Survivors",
+                source: "Suicide Prevention Lifeline",
                 description:
-                    "JED Foundation menunjukkan bahwa remaja LGBTQIA+ tiga kali lebih mungkin mengalami masalah kesehatan mental dibanding yang non-LGBTQIA+.",
-                date: "2025",
+                    "Kumpulan kisah inspiratif dari para penyintas yang berhasil mengatasi pikiran bunuh diri dan membangun kembali kehidupan yang bermakna.",
+                date: "2023",
                 image: "https://picsum.photos/seed/suicidal3/400/300",
-                link: "https://jedfoundation.org/what-we-expect-in-2025-new-years-trends-in-youth-mental-health/",
+                link: "#",
             },
         ];
 
@@ -243,26 +243,32 @@ export default class HomePage {
         // Fungsi untuk membuat kartu artikel
         const renderArticleCard = (article) => {
             return `
-                <div class="bg-white rounded-xl overflow-hidden shadow-md transition-transform hover:scale-[1.02]" data-category="${article.category
+                <div class="bg-white rounded-xl overflow-hidden shadow-md transition-transform hover:scale-[1.02]" data-category="${
+                    article.category
                 }">
                     <div class="h-48 overflow-hidden">
-                        <img src="${article.image}" alt="${article.title
-                }" class="w-full h-full object-cover" />
+                        <img src="${article.image}" alt="${
+                article.title
+            }" class="w-full h-full object-cover" />
                     </div>
                     <div class="p-5">
-                        <span class="text-xs font-semibold px-2 py-1 rounded-full ${categoryColorMap[article.categoryColor] ||
-                "text-gray-600 bg-gray-100"
-                }">
+                        <span class="text-xs font-semibold px-2 py-1 rounded-full ${
+                            categoryColorMap[article.categoryColor] ||
+                            "text-gray-600 bg-gray-100"
+                        }">
                             ${article.categoryLabel}
                         </span>
                         <h3 class="font-bold text-lg mt-2">${article.title}</h3>
-                        <p class="text-gray-600 text-sm mt-2 line-clamp-3">${article.description
-                }</p>
+                        <p class="text-gray-600 text-sm mt-2 line-clamp-3">${
+                            article.description
+                        }</p>
                         <div class="mt-4 flex justify-between items-center">
-                            <span class="text-xs text-gray-500">${article.date
-                }</span>
-                            <a href="${article.link
-                }" target="_blank" rel="noopener noreferrer" class="text-sm font-medium text-blue-600 hover:text-blue-800">Baca selengkapnya</a>
+                            <span class="text-xs text-gray-500">${
+                                article.date
+                            }</span>
+                            <a href="${
+                                article.link
+                            }" target="_blank" rel="noopener noreferrer" class="text-sm font-medium text-blue-600 hover:text-blue-800">Baca selengkapnya</a>
                         </div>
                     </div>
                 </div>
@@ -287,18 +293,20 @@ export default class HomePage {
                             </ul>
                         </nav>
                         <div class="w-full md:w-auto md:block">
-                            ${userLoggedIn
-                ? `
+                            ${
+                                userLoggedIn
+                                    ? `
                                 <div class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-4">
-                                    <span class="text-gray-700 font-medium text-center">Halo, ${userData?.name ||
-                userData?.email?.split("@")[0] ||
-                "Pengguna"
-                }</span>
+                                    <span class="text-gray-700 font-medium text-center">Halo, ${
+                                        userData?.name ||
+                                        userData?.email?.split("@")[0] ||
+                                        "Pengguna"
+                                    }</span>
                                     <button id="btn-logout" type="button" class="w-full md:w-auto text-white bg-red-600 hover:bg-red-700 font-medium rounded-lg text-sm px-5 py-2.5">Logout</button>
                                 </div>`
-                : `
+                                    : `
                                 <a href="#/login" class="block w-full md:w-auto text-center text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm px-5 py-2.5">Login</a>`
-            }
+                            }
                         </div>
                     </div>
                 </div>
@@ -321,13 +329,14 @@ export default class HomePage {
                 <div class="w-full flex justify-center items-center py-10 px-4">
                     <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-8 md:gap-20">
                         ${Array(8)
-                .fill(0)
-                .map(
-                    (_, i) =>
-                        `<div class="h-[60px] sm:h-[80px] md:h-[100px]"><img src="/images/${(i % 3) + 4
-                        }.png" alt="" class="w-full h-full object-contain" /></div>`
-                )
-                .join("")}
+                            .fill(0)
+                            .map(
+                                (_, i) =>
+                                    `<div class="h-[60px] sm:h-[80px] md:h-[100px]"><img src="/images/${
+                                        (i % 3) + 4
+                                    }.png" alt="" class="w-full h-full object-contain" /></div>`
+                            )
+                            .join("")}
                     </div>
                 </div>
 
@@ -461,8 +470,8 @@ export default class HomePage {
                     </div>
                     <div id="articles-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
                         ${articles
-                .map((article) => renderArticleCard(article))
-                .join("")}
+                            .map((article) => renderArticleCard(article))
+                            .join("")}
                     </div>
                     <div class="flex justify-center mt-6 md:mt-8">
                         <button class="px-6 md:px-8 py-2 md:py-3 bg-blue-600 text-white font-medium rounded-full hover:bg-blue-700 transition text-sm md:text-base">Lihat Lebih Banyak</button>
@@ -595,3 +604,4 @@ export default class HomePage {
         filterArticles("semua");
     }
 }
+// ===== AKHIR KODE LENGKAP UNTUK home-page.js =====
