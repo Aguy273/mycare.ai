@@ -81,7 +81,7 @@ export default class HomePage {
                 source: "Mental Health Foundation UK",
                 description:
                     "Panduan lengkap untuk memahami perbedaan antara rasa takut dan cemas, jenis-jenis kecemasan, serta langkah praktis untuk mengelola dan menghadapinya.",
-               date: "2024",
+                date: "2024",
                 image: "https://picsum.photos/seed/fear1/400/300",
                 link: "https://www.mentalhealth.org.uk/explore-mental-health/publications/how-overcome-anxiety-and-fear",
             },
@@ -186,7 +186,7 @@ export default class HomePage {
                 source: "help guide",
                 description:
                     "Artikel HelpGuide ini membahas tahapan kesedihan, proses berduka, dan cara-cara sehat untuk mengatasi kehilangan, termasuk mitos umum, gejala emosional, serta pentingnya dukungan dan perawatan diri.",
-                 date: "2024",
+                date: "2024",
                 image: "https://picsum.photos/seed/sadness4/400/300",
                 link: "https://www.helpguide.org/mental-health/grief/coping-with-grief-and-loss",
             },
@@ -243,32 +243,26 @@ export default class HomePage {
         // Fungsi untuk membuat kartu artikel
         const renderArticleCard = (article) => {
             return `
-                <div class="bg-white rounded-xl overflow-hidden shadow-md transition-transform hover:scale-[1.02]" data-category="${
-                    article.category
+                <div class="bg-white rounded-xl overflow-hidden shadow-md transition-transform hover:scale-[1.02]" data-category="${article.category
                 }">
                     <div class="h-48 overflow-hidden">
-                        <img src="${article.image}" alt="${
-                article.title
-            }" class="w-full h-full object-cover" />
+                        <img src="${article.image}" alt="${article.title
+                }" class="w-full h-full object-cover" />
                     </div>
                     <div class="p-5">
-                        <span class="text-xs font-semibold px-2 py-1 rounded-full ${
-                            categoryColorMap[article.categoryColor] ||
-                            "text-gray-600 bg-gray-100"
-                        }">
+                        <span class="text-xs font-semibold px-2 py-1 rounded-full ${categoryColorMap[article.categoryColor] ||
+                "text-gray-600 bg-gray-100"
+                }">
                             ${article.categoryLabel}
                         </span>
                         <h3 class="font-bold text-lg mt-2">${article.title}</h3>
-                        <p class="text-gray-600 text-sm mt-2 line-clamp-3">${
-                            article.description
-                        }</p>
+                        <p class="text-gray-600 text-sm mt-2 line-clamp-3">${article.description
+                }</p>
                         <div class="mt-4 flex justify-between items-center">
-                            <span class="text-xs text-gray-500">${
-                                article.date
-                            }</span>
-                            <a href="${
-                                article.link
-                            }" target="_blank" rel="noopener noreferrer" class="text-sm font-medium text-blue-600 hover:text-blue-800">Baca selengkapnya</a>
+                            <span class="text-xs text-gray-500">${article.date
+                }</span>
+                            <a href="${article.link
+                }" target="_blank" rel="noopener noreferrer" class="text-sm font-medium text-blue-600 hover:text-blue-800">Baca selengkapnya</a>
                         </div>
                     </div>
                 </div>
@@ -293,20 +287,14 @@ export default class HomePage {
                             </ul>
                         </nav>
                         <div class="w-full md:w-auto md:block">
-                            ${
-                                userLoggedIn
-                                    ? `
+                        ${userLoggedIn ? `
                                 <div class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-4">
-                                    <span class="text-gray-700 font-medium text-center">Halo, ${
-                                        userData?.name ||
-                                        userData?.email?.split("@")[0] ||
-                                        "Pengguna"
-                                    }</span>
+                                    <span class="text-gray-700 font-medium text-center">Halo, ${userData?.name || userData?.email?.split("@")[0] || "Pengguna"}</span>
                                     <button id="btn-logout" type="button" class="w-full md:w-auto text-white bg-red-600 hover:bg-red-700 font-medium rounded-lg text-sm px-5 py-2.5">Logout</button>
                                 </div>`
-                                    : `
+                : `
                                 <a href="#/login" class="block w-full md:w-auto text-center text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm px-5 py-2.5">Login</a>`
-                            }
+            }
                         </div>
                     </div>
                 </div>
@@ -329,14 +317,13 @@ export default class HomePage {
                 <div class="w-full flex justify-center items-center py-10 px-4">
                     <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-8 md:gap-20">
                         ${Array(8)
-                            .fill(0)
-                            .map(
-                                (_, i) =>
-                                    `<div class="h-[60px] sm:h-[80px] md:h-[100px]"><img src="/images/${
-                                        (i % 3) + 4
-                                    }.png" alt="" class="w-full h-full object-contain" /></div>`
-                            )
-                            .join("")}
+                .fill(0)
+                .map(
+                    (_, i) =>
+                        `<div class="h-[60px] sm:h-[80px] md:h-[100px]"><img src="/images/${(i % 3) + 4
+                        }.png" alt="" class="w-full h-full object-contain" /></div>`
+                )
+                .join("")}
                     </div>
                 </div>
 
@@ -470,8 +457,8 @@ export default class HomePage {
                     </div>
                     <div id="articles-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
                         ${articles
-                            .map((article) => renderArticleCard(article))
-                            .join("")}
+                .map((article) => renderArticleCard(article))
+                .join("")}
                     </div>
                     <div class="flex justify-center mt-6 md:mt-8">
                         <button class="px-6 md:px-8 py-2 md:py-3 bg-blue-600 text-white font-medium rounded-full hover:bg-blue-700 transition text-sm md:text-base">Lihat Lebih Banyak</button>
@@ -533,14 +520,10 @@ export default class HomePage {
 
         const logoutButton = document.getElementById("btn-logout");
         if (logoutButton) {
-            logoutButton.addEventListener("click", async () => {
-                try {
-                    clearAuth();
-                    document.dispatchEvent(new Event("authChanged"));
-                    window.location.reload();
-                } catch (error) {
-                    console.error("Error during logout:", error);
-                }
+            logoutButton.addEventListener("click", () => {
+                clearAuth(); // Hapus data autentikasi
+                document.dispatchEvent(new Event("authChanged")); // Event untuk memperbarui UI
+                window.location.href = "/login"; // Redirect ke halaman login
             });
         }
 
@@ -604,4 +587,3 @@ export default class HomePage {
         filterArticles("semua");
     }
 }
-// ===== AKHIR KODE LENGKAP UNTUK home-page.js =====

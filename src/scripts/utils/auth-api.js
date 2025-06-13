@@ -108,56 +108,40 @@ const AuthApi = {
         localStorage.setItem("login_redirect", currentUrl);
 
         // Tambahkan parameter untuk menangani error
-        window.location.href = `${CONFIG.API_BASE_URL}${
-            CONFIG.AUTH_API.GOOGLE_AUTH_URL
-        }?redirect_uri=${encodeURIComponent(currentUrl)}`;
+        window.location.href = `${CONFIG.API_BASE_URL}${CONFIG.AUTH_API.GOOGLE_AUTH_URL
+            }?redirect_uri=${encodeURIComponent(currentUrl)}`;
     },
 
     // Tambahkan metode untuk menangani callback Google
     handleGoogleCallback() {
-        // Periksa apakah ada parameter error di URL
         const urlParams = new URLSearchParams(window.location.search);
-        const error = urlParams.get("error");
-
-        if (error) {
-            return {
-                error: true,
-                message: `Login dengan Google gagal: ${error}`,
-                data: null,
-            };
-        }
-
-        // Ambil token dari URL jika ada
-        const token = urlParams.get("token");
-        const userData = urlParams.get("user");
+        const token = urlParams.get("token");  // Ambil token dari URL
+        const userData = urlParams.get("user");  // Ambil data user dari URL
 
         if (token) {
             try {
                 const user = userData
                     ? JSON.parse(decodeURIComponent(userData))
-                    : { email: "user@example.com" };
-                return {
-                    error: false,
-                    message: "Login dengan Google berhasil",
-                    data: { token, user },
-                };
+                    : { email: "user@example.com" };  // Default jika tidak ada data user
+
+                // Simpan token dan user ke localStorage dan setAuth
+                setAuth({
+                    token: token,
+                    user: user,
+                });
+
+                // Redirect ke halaman utama setelah login berhasil
+                window.location.href = '/home';
             } catch (e) {
                 console.error("Error parsing user data:", e);
-                return {
-                    error: false,
-                    message:
-                        "Login dengan Google berhasil, tetapi data pengguna tidak valid",
-                    data: { token, user: { email: "user@example.com" } },
-                };
+                // Redirect ke halaman login jika terjadi error
+                window.location.href = '/login';
             }
+        } else {
+            // Jika token tidak ada di URL, redirect ke halaman login
+            window.location.href = '/login';
         }
-
-        return {
-            error: true,
-            message: "Login dengan Google gagal. Silakan coba lagi.",
-            data: null,
-        };
-    },
+    }
 };
 
-export default AuthApi;
+export default AuthAPI;
