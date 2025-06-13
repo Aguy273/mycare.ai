@@ -520,10 +520,14 @@ export default class HomePage {
 
         const logoutButton = document.getElementById("btn-logout");
         if (logoutButton) {
-            logoutButton.addEventListener("click", () => {
-                clearAuth(); // Hapus data autentikasi
-                document.dispatchEvent(new Event("authChanged")); // Event untuk memperbarui UI
-                window.location.href = "/login"; // Redirect ke halaman login
+            logoutButton.addEventListener("click", async () => {
+                try {
+                    clearAuth();
+                    document.dispatchEvent(new Event("authChanged"));
+                    window.location.reload();
+                } catch (error) {
+                    console.error("Error during logout:", error);
+                }
             });
         }
 
